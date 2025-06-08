@@ -27,11 +27,13 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        Vector3 pos = transform.position;
+        pos.z = pos.y;
+        transform.position = pos;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
         movement.Normalize();
-
         if (Input.GetMouseButtonDown(0))
         {
             Shoot();

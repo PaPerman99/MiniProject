@@ -12,7 +12,6 @@ public class Bullet : MonoBehaviour
     {
         Destroy(gameObject, lifeTime); // 防止飞太远
     }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetComponent<EnemyController>())
