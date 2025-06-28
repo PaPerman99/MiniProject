@@ -1,0 +1,18 @@
+[
+  {
+    "id": 2001,
+    "comment": "敌人A",
+    "health": 100,
+    "attack": 10,
+    "speed": 1,
+    "ignore_terrain": true
+  },
+  {
+    "id": 2002,
+    "comment": "敌人B",
+    "health": 100,
+    "attack": 5,
+    "speed": 1.5,
+    "ignore_terrain": false
+  }
+]

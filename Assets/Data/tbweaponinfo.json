@@ -1,0 +1,10 @@
+[
+  {
+    "id": 3001,
+    "comment": "武器A",
+    "attack": 15,
+    "bullet_speed": 2,
+    "ignore_terrain": 2.5,
+    "piercing": 0
+  }
+]
