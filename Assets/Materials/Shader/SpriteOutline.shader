@@ -4,7 +4,7 @@
     {
         _MainTex ("Sprite Texture", 2D) = "white" {}
         _OutlineColor ("Outline Color", Color) = (0,1,1,1)
-        _OutlineThickness ("Outline Thickness", Range(0,0.1)) = 0.03
+        _OutlineThickness ("Outline Thickness", Range(0,1)) = 0.03
     }
     SubShader
     {
