@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class InteractableObject : MonoBehaviour
 {
-    public GameObject outline; // 代表白色外轮廓的GameObject，提前做成子物体或特效
     public SpriteRenderer spriteRenderer;
 
     private Material materialInstance;
@@ -14,17 +13,8 @@ public class InteractableObject : MonoBehaviour
 
     private void Awake()
     {
-        if (outline != null)
-            outline.SetActive(false); // 默认隐藏
-
         materialInstance = Instantiate(spriteRenderer.material);
         spriteRenderer.material = materialInstance;
-    }
-
-    public void ShowOutline(bool show)
-    {
-        if (outline != null)
-            outline.SetActive(show);
     }
 
 
@@ -32,7 +22,6 @@ public class InteractableObject : MonoBehaviour
     {
         Debug.Log("Interacted with " + gameObject.name);
     }
-
 
     public void ShowOutline()
     {
