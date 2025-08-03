@@ -20,7 +20,12 @@ public class InteractableObject : MonoBehaviour
 
     public virtual void Interact()
     {
-        Debug.Log("Interacted with " + gameObject.name);
+        GameObject go = GameObject.Find("UIManager");
+        if (go != null)
+        {
+            InventoryManager inventoryManager = go.GetComponent<InventoryManager>();
+            inventoryManager.ToggleItemPanelUI();
+        }
     }
 
     public void ShowOutline()

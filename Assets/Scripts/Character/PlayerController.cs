@@ -12,14 +12,17 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
     public float moveSpeed = 5f;
-
+    
+    
+    public GameObject currentInteractiveItem = null;
+    
     public float HP = 100;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
+    
     public void GetDamage(float damage)
     {
         HP -= damage;
@@ -34,10 +37,10 @@ public class PlayerController : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         movement.Normalize();
-        if (Input.GetMouseButtonDown(0))
-        {
-            Shoot();
-        }
+        // if (Input.GetMouseButtonDown(0))
+        // {
+        //     Shoot();
+        // }
     }
 
     void FixedUpdate()
