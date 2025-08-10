@@ -1,0 +1,22 @@
+[
+  {
+    "id": 3001,
+    "comment": "生命值恢复（小）",
+    "type": "item",
+    "kind": "potion",
+    "rarity": "normal",
+    "description": "喝下去就能恢复一些生命值",
+    "parameter": "10",
+    "weight": 5
+  },
+  {
+    "id": 3002,
+    "comment": "生命值恢复（中）",
+    "type": "item",
+    "kind": "potion",
+    "rarity": "normal",
+    "description": "喝下去就能恢复不少生命值",
+    "parameter": "20",
+    "weight": 10
+  }
+]
